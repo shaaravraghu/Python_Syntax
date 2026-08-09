@@ -164,3 +164,16 @@ a = "Hello"
 b = "World"
 c = a + " " + b # Hello World
 "abc" * 3 # abcabcabc
+
+
+
+
+# ESCAPE SEQUENCES
+\n    # newline
+\t    # tab
+\\    # backslash
+\'    # single quote
+\"    # double quote
+# alternative raw string
+path = r"C:\Users\test"
+
