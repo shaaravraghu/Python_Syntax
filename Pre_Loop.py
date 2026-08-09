@@ -70,3 +70,18 @@ a = b = c = 0
 
 # SWAPPING VARIABLES
 a, b = b, a
+
+
+
+
+
+
+
+
+# BASIC DATA TYPES
+a = 10             # int
+b = 3.14           # float
+c = 2 + 3j         # complex
+d = True            # bool
+e = "hello"         # str
+f = None            # NoneType
