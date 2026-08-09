@@ -113,3 +113,21 @@ z = 3 + 4j
 z.real
 z.imag
 z.conjugate()
+
+
+
+
+
+# BOOLEAN
+x = True
+y = False
+print(True == 1) # True
+print(False == 0) # True
+print(int(True))   # 1
+print(int(False))  # 0
+
+
+
+# NONE
+x = None
+x is None
