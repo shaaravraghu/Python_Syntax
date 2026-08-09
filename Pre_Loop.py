@@ -51,3 +51,22 @@ student-name = "A"  # ❌
 class = 10      # ❌ keyword
 
 
+
+
+
+
+
+
+
+# MULTIPLE ASSIGNMENT
+a, b, c = 1, 2, 3
+a = b = c = 0
+
+
+
+
+
+
+
+# SWAPPING VARIABLES
+a, b = b, a
