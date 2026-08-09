@@ -177,3 +177,24 @@ c = a + " " + b # Hello World
 # alternative raw string
 path = r"C:\Users\test"
 
+
+# f-STRING
+name = "Shaarav"
+age = 20
+print(f"My name is {name} and I am {age}") # Variables
+a = 10
+b = 20
+print(f"Sum = {a + b}") # Expressions
+pi = 3.14159265
+print(f"{pi:.2f}") # 3.14 Truncating Floating Point
+x = 42
+print(f"{x:5}") # Width
+x = 0.756
+print(f"{x:.2%}") # 75.60% Percentage
+
+
+
+
+
+
+
