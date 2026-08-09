@@ -85,3 +85,16 @@ c = 2 + 3j         # complex
 d = True            # bool
 e = "hello"         # str
 f = None            # NoneType
+
+
+
+# INTEGERS
+x = 999999999999999999999999999999999999999
+x = 2 ** 1000
+print(x)
+# Python integers have arbitrary precision. No normal C/C++-style integer overflow at a fixed bit width.
+
+
+
+
+
