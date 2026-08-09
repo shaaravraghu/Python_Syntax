@@ -98,3 +98,18 @@ print(x)
 
 
 
+# FLOATING POINT
+x = 3.14
+y = 1.0
+z = 5e3 # 5000.0
+type(5e3) # float
+print(0.1 + 0.2) # 0.30000000000000004: Don't assume decimal floating-point arithmetic is exact.
+
+
+
+
+# COMPLEX NUMBER
+z = 3 + 4j
+z.real
+z.imag
+z.conjugate()
