@@ -198,3 +198,25 @@ print(f"{x:.2%}") # 75.60% Percentage
 
 
 
+# INPUT
+x = input()
+print(type(x))
+# <class 'str'>: Always takes input as string
+
+
+
+
+
+
+# TYPE CONVERSION
+x = int("123") # str to int
+x = float("3.14") # str to float
+str(123) 
+str(3.14) # number to str
+float(10) # 10.0: int to float
+int(3.9) # 3
+int(-3.9) # -3: float to int
+
+
+
+
