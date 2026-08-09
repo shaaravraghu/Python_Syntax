@@ -131,3 +131,36 @@ print(int(False))  # 0
 # NONE
 x = None
 x is None
+
+
+
+
+
+
+
+# STRINGS
+s = "Hello"
+s = 'Hello'
+s = '''Hello
+World'''
+s = """Hello
+World"""
+# Indexing
+# P  y  t  h  o  n
+# 0  1  2  3  4  5
+# -6 -5 ...      -1
+# Slicing
+s[start:stop:step]
+s[:3]     # "Pyt"
+s[3:]     # "hon"
+s[:]      # "Python"
+s[::-1] # "nohtyP"
+# Immutability
+s = "hello"
+s[0] = "H"     # ❌ TypeError
+s = "H" + s[1:] # Immutability
+# Concatenation
+a = "Hello"
+b = "World"
+c = a + " " + b # Hello World
+"abc" * 3 # abcabcabc
