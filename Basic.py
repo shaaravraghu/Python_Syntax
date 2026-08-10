@@ -282,3 +282,16 @@ or
 x if condition else y
 # 15. Lambda
 lambda
+
+
+
+
+
+
+# == vs is
+# == asks: Do these objects have equal values?
+# is asks: Are these the exact same object?
+a = [1, 2, 3]
+b = [1, 2, 3]
+print(a == b) # True
+print(a is b) # False
