@@ -2,8 +2,8 @@
 # 2. while loop → repeat while a condition remains true
 
 # FOR LOOP OVER RANGE
-for variable in iterable:
-    statement
+for variable in iterable: # Initialization + Condition + Update
+    statement # Body
 for i in range(5):
     print(i)
 # 0 - (n-1) iterations
@@ -100,3 +100,27 @@ for i in range(n):
 for i in range(n):
     for j in range(i + 1, n):
         ...
+
+
+
+
+
+
+
+
+# WHILE LOOP
+while condition:
+    statement
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+# Initialization
+#   ↓
+# Condition
+#   ↓
+# Body
+#   ↓
+# Update
+#   ↓
+# Repeat
