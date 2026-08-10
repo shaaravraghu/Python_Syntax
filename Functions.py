@@ -248,4 +248,13 @@ x() # calls it.
 
 
 
+# Passing Functions as Arguments
+def square(x):
+    return x * x
+def apply(func, value):
+    return func(value)
+print(apply(square, 5))
+
+
+
 
