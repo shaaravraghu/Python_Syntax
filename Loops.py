@@ -190,3 +190,22 @@ arr = [x for x in arr if x % 2 != 0]
 for x in arr[:]:
     if x % 2 == 0:
         arr.remove(x)
+
+
+
+
+
+
+
+
+# REAL UNDERSTANDING OF FOR LOOP
+for x in arr:
+    print(x)
+# what it actually does
+iterator = iter(arr)
+while True:
+    try:
+        x = next(iterator)
+        print(x)
+    except StopIteration:
+        break
