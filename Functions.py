@@ -258,3 +258,15 @@ print(apply(square, 5))
 
 
 
+# Return Functions: Functions calling functions
+def outer():
+    def inner():
+        print("Hello")
+    return inner # not a function call
+outer()() # (outer())()
+# similar implementation
+def outer():
+    def inner():
+        print("Hello")
+    return inner() # function call
+outer() 
