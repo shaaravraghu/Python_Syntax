@@ -228,3 +228,11 @@ words = input().split() # multiple strings
 
 
 
+# ARITHMETIC OPERATORS
++       # addition
+-       # subtraction
+*       # multiplication
+/       # true division
+//      # floor division: A // B = floor(A/B)
+%       # modulo
+**      # exponentiation
