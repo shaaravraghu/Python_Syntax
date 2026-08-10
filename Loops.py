@@ -160,3 +160,15 @@ else:
     body
 # runs always after loop unless forcibly stopped by break statement (continue has no effect on it)
 # shouldn't be confused by if-else statement
+
+
+
+
+
+
+
+
+# PASS
+# Written to syntactically create a block (no use); meant for writing some code in a loop that is empty otherwise. Continue is completely different from pass.
+# Scope of Variable
+# Loops do not create any seperate scope.
