@@ -172,3 +172,21 @@ else:
 # Written to syntactically create a block (no use); meant for writing some code in a loop that is empty otherwise. Continue is completely different from pass.
 # Scope of Variable
 # Loops do not create any seperate scope.
+
+
+
+
+
+
+# ITERATING WHILE MODIFYING A LIST
+# Avoid
+arr = [1, 2, 3, 4, 5]
+for x in arr:
+    if x % 2 == 0:
+        arr.remove(x)
+# Safer Approach 1
+arr = [x for x in arr if x % 2 != 0]
+# Safer Approach 2: iterate over a copy
+for x in arr[:]:
+    if x % 2 == 0:
+        arr.remove(x)
