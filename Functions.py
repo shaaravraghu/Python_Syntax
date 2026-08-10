@@ -198,3 +198,43 @@ def show(**kwargs): # for iteration
 
 
 
+# Combined Example
+def f(a, b=10, *args, **kwargs):
+    print(a)
+    print(b)
+    print(args)
+    print(kwargs)
+f(1, 2, 3, 4, 5, x=10, y=20)
+# 1
+# 2
+# (3, 4, 5)
+# {'x': 10, 'y': 20}
+
+
+
+
+
+
+
+
+
+# Argument Unpacking
+# List/ Tuple based
+def add(a, b, c):
+    return a + b + c
+nums = [10, 20, 30]
+# Dictionary based
+def greet(name, age):
+    print(name, age)
+data = {
+    "name": "Shaarav",
+    "age": 20
+}
+greet(**data)
+print(add(*nums))
+
+
+
+
+
+
