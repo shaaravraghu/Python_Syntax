@@ -218,5 +218,13 @@ int(3.9) # 3
 int(-3.9) # -3: float to int
 
 
+# IMPORTANT INPUT PATTERNS
+n = int(input()) # Single int
+a, b = map(int, input().split()) # 2+ int
+arr = list(map(int, input().split())) # Array
+words = input().split() # multiple strings
+
+
+
 
 
