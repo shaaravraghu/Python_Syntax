@@ -316,5 +316,15 @@ print(a is b) # True
 <<    # left shift
 >>    # right shift
 # Short circuit evaluation of comparison elements!
-
-
+# Left shift <<
+5 << 1
+# 0101 << 1  →  1010
+# Result: 10
+# Right shift >>
+10 >> 1
+# 1010 >> 1  →  0101
+# Result: 5
+x << n   # shift bits LEFT by n positions
+x >> n   # shift bits RIGHT by n positions
+x << n  == x * (2 ** n)
+x >> n  == x // (2 ** n)
