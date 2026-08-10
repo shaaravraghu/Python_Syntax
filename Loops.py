@@ -209,3 +209,27 @@ while True:
         print(x)
     except StopIteration:
         break
+
+
+
+
+
+
+
+
+
+# ITERABLE V/S ITERATOR
+arr = [10, 20, 30]
+it = iter(arr)
+next(it) # 10
+next(it) # 20
+next(it) # 30 
+next(it) # StopIteration
+# Iterable: something that you can call
+# list
+# tuple
+# string
+# set
+# dictionary
+# range
+# Iterator: An object that keeps track of its current position and supports: next()
