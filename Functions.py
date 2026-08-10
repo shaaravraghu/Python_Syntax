@@ -238,3 +238,14 @@ print(add(*nums))
 
 
 
+# Functions as Objects
+# A function can be assigned to a variable.
+def greet():
+    print("Hello")
+x = greet # does not call the function.
+x() # calls it.
+
+
+
+
+
