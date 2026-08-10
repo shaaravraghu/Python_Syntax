@@ -79,3 +79,24 @@ for name, mark in zip(names, marks):
 # B 80
 # C 70
 # stops at shorter item
+
+
+
+
+
+
+
+
+
+#  NESTED LOOPS
+for i in range(n):
+    for j in range(n):
+        print(i, j)
+# Dependant Loop
+for i in range(n):
+    for j in range(i):
+        print(i, j)
+# Triangular Loop
+for i in range(n):
+    for j in range(i + 1, n):
+        ...
