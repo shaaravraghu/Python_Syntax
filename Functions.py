@@ -108,3 +108,49 @@ def add_item(item, items=None):
 print(add_item(1)) # [1]
 print(add_item(2)) # [2]
 print(add_item(3)) # [3]
+
+
+
+
+
+
+
+
+
+
+# Positional-only parameters (ensures all parameters before / are positional)
+def add(a, b, /):
+    return a + b
+add(2, 3) # valid
+add(a=2, b=3) # invalid
+# further example
+def f(a, b, /, c, d):
+    pass
+# a, b → positional-only
+# c, d → positional OR keyword
+
+
+
+
+
+
+
+
+
+
+# Keyword-only parameters (ensures all parameters after * are keyword-based)
+def greet(name, *, age):
+    print(name, age)
+greet("Shaarav", age=20) # Valid
+greet("Shaarav", 20) # Invalid
+
+
+
+
+
+# Combining / and *
+def f(a, b, /, c, d, *, e, f):
+    pass
+# a, b       → positional-only
+# c, d       → positional or keyword
+# e, f       → keyword-only
