@@ -233,3 +233,16 @@ next(it) # StopIteration
 # dictionary
 # range
 # Iterator: An object that keeps track of its current position and supports: next()
+
+
+
+
+
+# GENERATORS
+# Generators are incredibly useful when dealing with large data because they don't necessarily construct the entire sequence in memory.
+def numbers():
+    yield 1
+    yield 2
+    yield 3
+for x in numbers():
+    print(x)
