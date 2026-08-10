@@ -299,3 +299,22 @@ a = [1, 2, 3]
 b = a
 print(a == b) # True
 print(a is b) # True
+
+
+
+
+
+
+
+
+
+# BIT-WISE OPERATOR
+&     # AND
+|     # OR
+^     # XOR
+~     # NOT
+<<    # left shift
+>>    # right shift
+# Short circuit evaluation of comparison elements!
+
+
