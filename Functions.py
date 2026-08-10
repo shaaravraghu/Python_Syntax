@@ -286,3 +286,13 @@ print(square(5))
 # example
 add = lambda a, b: a + b
 
+
+
+# Lambda + Sort
+students = [
+    ("Alice", 90),
+    ("Bob", 75),
+    ("Charlie", 85)
+]
+students.sort(key=lambda x: x[1])
+students.sort(key=lambda x: x[1], reverse= True)
