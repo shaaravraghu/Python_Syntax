@@ -124,3 +124,27 @@ while i < 5:
 # Update
 #   ↓
 # Repeat
+
+
+
+
+# INFINITE LOOP, BREAK & CONTINUE
+while True:
+    ...
+for i in range(10):
+    if i == 5:
+        break # terminate loop
+    print(i)
+for i in range(10):
+    if i == 5:
+        continue # skip current iteration
+    print(i)
+# break only terminates the inner-most loop is a nested loop system
+# continue only skips current iteration of the inner most loop in a nested loop system
+
+
+
+
+
+
+
