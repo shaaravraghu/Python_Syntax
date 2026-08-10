@@ -270,3 +270,19 @@ def outer():
         print("Hello")
     return inner() # function call
 outer() 
+
+
+
+
+
+
+
+
+# Lambda Functions
+lambda arguments: expression
+# example
+square = lambda x: x * x
+print(square(5))
+# example
+add = lambda a, b: a + b
+
