@@ -328,3 +328,45 @@ x << n   # shift bits LEFT by n positions
 x >> n   # shift bits RIGHT by n positions
 x << n  == x * (2 ** n)
 x >> n  == x // (2 ** n)
+
+
+
+
+
+
+
+
+
+
+# TRUTHINESS
+# Default False Values
+False
+None
+0
+0.0
+""
+[]
+()
+{}
+set()
+
+# Ternary Expression
+x = a if (condition) else b
+
+
+
+
+
+
+# BASIC BUILT-IN FUNCTIONS
+abs() # returns value without sign
+round() # rounds half (0.5) to even number (not always upwards)
+pow(base, power) 
+min()
+max()
+sum()
+len()
+type()
+id()
+divmod(dividend, divisor) # (quotient, remainder) == (a//b, a%b)
+
