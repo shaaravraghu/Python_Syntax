@@ -148,3 +148,15 @@ for i in range(10):
 
 
 
+# ELSE
+for iterator in range/ item:
+    body
+else:
+    body
+# runs always after loop unless forcibly stopped by break statement (continue has no effect on it)
+while condition:
+    body
+else:
+    body
+# runs always after loop unless forcibly stopped by break statement (continue has no effect on it)
+# shouldn't be confused by if-else statement
