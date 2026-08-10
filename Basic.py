@@ -236,3 +236,49 @@ words = input().split() # multiple strings
 //      # floor division: A // B = floor(A/B)
 %       # modulo
 **      # exponentiation
+
+
+
+
+
+
+
+
+
+
+
+
+# OPERATOR PRECEDENCE
+# Python operator precedence (highest → lowest)
+# 1. Parentheses
+()
+# 2. Exponentiation
+**
+# 3. Unary operators
++x, -x, ~x
+# 4. Multiplication, division, floor division, modulo
+*, /, //, %
+# 5. Addition and subtraction
++, -
+# 6. Bitwise shifts
+<<, >>
+# 7. Bitwise AND
+&
+# 8. Bitwise XOR
+^
+# 9. Bitwise OR
+|
+# 10. Comparisons
+<, <=, >, >=, ==, !=
+in, not in
+is, is not
+# 11. Boolean NOT
+not
+# 12. Boolean AND
+and
+# 13. Boolean OR
+or
+# 14. Conditional expression
+x if condition else y
+# 15. Lambda
+lambda
