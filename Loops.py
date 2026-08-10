@@ -27,3 +27,55 @@ for x in data:
 s = {10, 20, 30}
 for x in s:
     print(x)
+# Dictionaries Iteration
+d = {
+    "a": 10,
+    "b": 20,
+    "c": 30
+}
+for x in d: # key iteration
+    print(x) 
+# a
+# b
+# c
+for x in d.values(): # value iteration
+    print(x)
+# 10
+# 20
+# 30
+# keys and values iteration
+for key, value in d.items():
+    print(key, value)
+# a 10
+# b 20
+# c 30
+
+
+
+
+
+
+
+
+
+# ENUMERATE
+for i, value in enumerate(arr):
+    print(i, value)
+# 0 10
+# 1 20
+# 2 30
+for i, value in enumerate(arr, start=1):
+    print(i, value)
+# 1 10
+# 2 20
+# 3 30
+
+# ZIP
+names = ["A", "B", "C"]
+marks = [90, 80, 70]
+for name, mark in zip(names, marks):
+    print(name, mark)
+# A 90
+# B 80
+# C 70
+# stops at shorter item
