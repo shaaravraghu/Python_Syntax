@@ -246,3 +246,12 @@ def numbers():
     yield 3
 for x in numbers():
     print(x)
+
+
+# Accessing Nested Loops and Matrices
+for row in matrix:
+    for value in row:
+        print(value)
+for i in range(len(matrix)):
+    for j in range(len(matrix[i])):
+        print(matrix[i][j])
