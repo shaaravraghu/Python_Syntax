@@ -154,3 +154,47 @@ def f(a, b, /, c, d, *, e, f):
 # a, b       → positional-only
 # c, d       → positional or keyword
 # e, f       → keyword-only
+
+
+
+
+# *args
+# *args collects an arbitrary number of positional arguments into a tuple.
+def add(*args):
+    print(args)
+add(1, 2, 3, 4) # (1, 2, 3, 4) 
+# example
+def add(*args):
+    total = 0
+    for x in args:
+        total += x
+    return total
+print(add(1, 2, 3, 4)) # 10
+# args is just a conventional name.
+
+
+
+
+
+
+
+# **kwargs
+# **kwargs collects arbitrary keyword arguments into a dictionary.
+def show(**kwargs):
+    print(kwargs)
+show(name="Shaarav", age=20)
+# {'name': 'Shaarav', 'age': 20}
+def show(**kwargs): # for iteration
+    for key, value in kwargs.items():
+        print(key, value)
+
+
+
+
+
+
+
+
+
+
+
