@@ -197,3 +197,66 @@ for x in arr:
 freq = {}
 for ch in s:
     freq[ch] = freq.get(ch, 0) + 1
+
+
+
+
+
+
+
+
+
+
+
+# setdefault()
+d.setdefault(key, default)
+# If key exists, returns its existing value. If it doesn't exist, it creates it.
+
+# Grouping with setdefault()
+# from
+students = [
+    ("Alice", "CS"),
+    ("Bob", "Math"),
+    ("Charlie", "CS"),
+    ("David", "Math")
+]
+# to
+{
+    "CS": ["Alice", "Charlie"],
+    "Math": ["Bob", "David"]
+}
+# use
+groups = {}
+for name, department in students:
+    groups.setdefault(department, []).append(name)
+
+
+
+
+
+
+
+
+
+# Nested Dictionary
+students = {
+    "Alice": {
+        "age": 20,
+        "branch": "CSE"
+    },
+    "Bob": {
+        "age": 21,
+        "branch": "Math"
+    }
+}
+# Dictionary of Lists
+d = {
+    "fruits": ["apple", "banana"],
+    "vegetables": ["carrot", "spinach"]
+}
+# List of Dictionaries
+students = [
+    {"name": "Alice", "age": 20},
+    {"name": "Bob", "age": 21},
+    {"name": "Charlie", "age": 19}
+]
