@@ -318,3 +318,38 @@ print(result)
 # 6 + 4 = 10
 
 
+# Scope and LEGB Rule
+# L → Local
+# E → Enclosing
+# G → Global
+# B → Built-in
+x = "global"
+def outer():
+    x = "enclosing"
+    def inner():
+        x = "local"
+        print(x)
+    inner()
+outer()
+# regular example
+x = 10
+def change():
+    x = 20
+change()
+print(x) # 10
+# Global Variable: assigns global scope to variable
+x = 10
+def change():
+    global x
+    x = 20
+change()
+print(x) # 20
+# Nonlocal Variable: assigns nearest enclosing function scope
+def outer():
+    x = 10
+    def inner():
+        nonlocal x
+        x = 20
+    inner()
+    print(x)
+outer()
