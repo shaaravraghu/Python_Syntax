@@ -188,3 +188,12 @@ reversed_d = {
 
 
 
+# Frequency Counting
+# Array
+freq = {}
+for x in arr:
+    freq[x] = freq.get(x, 0) + 1
+# Chars in String
+freq = {}
+for ch in s:
+    freq[ch] = freq.get(ch, 0) + 1
