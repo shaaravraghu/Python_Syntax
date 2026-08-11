@@ -296,3 +296,25 @@ students = [
 ]
 students.sort(key=lambda x: x[1])
 students.sort(key=lambda x: x[1], reverse= True)
+
+
+# map(): returns iterator (not a list)
+nums = [1, 2, 3, 4]
+result = map(lambda x: x * 2, nums)
+print(list(result)) # [2, 4, 6, 8]
+
+# filter(): returns iterator (not a list)
+nums = [1, 2, 3, 4, 5, 6]
+result = filter(lambda x: x % 2 == 0, nums)
+print(list(result)) # [2, 4, 6]
+
+# reduce(): returns iterator (not a list)
+from functools import reduce
+nums = [1, 2, 3, 4]
+result = reduce(lambda a, b: a + b, nums)
+print(result)
+# 1 + 2 = 3
+# 3 + 3 = 6
+# 6 + 4 = 10
+
+
