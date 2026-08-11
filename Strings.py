@@ -57,3 +57,79 @@ c = a + " " + b # concatenation
 "ab"*3 # repetition
 variable/ char in/ not in variable/ char
 # == != > >= < <=: Python compares Unicode code points lexicographically.
+
+
+
+
+
+
+
+
+
+
+
+# In-built Functions 
+s = "Python"
+s.lower()   # python
+s.upper()   # PYTHON
+s # immutability ("Python")
+
+# upper/ lower case
+"hello world".capitalize() # Hello world (only 1st character)
+"hello world".title() # Hello World
+"PyThOn".swapcase() # pYtHoN
+s = "   hello   "
+
+# strip
+print(s.strip()) #|Hello|
+s.rstrip() # right strip
+s.lstrip() # left strip
+"abcHelloabc".strip("abc") #|Hello|
+"--Hello------".strip("-") #|Hello|
+
+# replace
+s = "hello world"
+print(s.replace("world", "Python")) #hello Python
+s.replace("a", "x", 2) # limit to first 2 matches
+
+# locate
+s = "hello world"
+print(s.find("world")) # 6 (index number) and returns -1 if not found!
+s.index("xyz") # returns ValueError
+
+# counter
+s = "banana"
+print(s.count("a")) # 3
+"aaaa".count("aa") # 2: counts non-overlapping occurances
+
+# match start/ end
+s = "Python programming"
+s.startswith("Python")  # True
+s.endswith("ing")       # True
+s.startswith(("Java", "Python", "C++")) # alternate option: tuples
+
+# split
+s = "apple,banana,orange"
+result = s.split(",")
+print(result) # ['apple', 'banana', 'orange']
+s = "hello   world   python"
+print(s.split()) # ['hello', 'world', 'python']
+s = "a-b-c-d"
+print(s.split("-", 2)) # ['a', 'b', 'c-d']
+print(s.rsplit("-", 2)) # ['a-b', 'c', 'd']
+s = "hello\nworld\npython"
+print(s.splitlines()) # ['hello', 'world', 'python']
+
+# join
+separator.join(iterable)
+words = ["Python", "is", "awesome"]
+result = " ".join(words)
+print(result)
+
+# partition
+s = "name=Shaarav"
+print(s.partition("=")) # ('name', '=', 'Shaarav')
+# before
+# separator
+# after
+s.rpartition()
