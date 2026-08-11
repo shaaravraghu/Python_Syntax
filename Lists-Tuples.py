@@ -98,3 +98,33 @@ print(numbers.count(2)) # 3
 
 
 
+# Length, Concatenation, Repetition
+len(my_list)
+a = [1, 2]
+b = [3, 4]
+c = a + b
+print(c) # [1, 2, 3, 4]
+a = [1, 2]
+print(a * 3) # [1, 2, 1, 2, 1, 2]
+# Important Example
+x = [[0] * 3] * 3
+print(x) # [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+x[0][0] = 99
+print(x) # [[99, 0, 0], [99, 0, 0], [99, 0, 0]]
+# Because all three inner lists refer to the same object.
+# Correct way of initialising
+x = [[0] * 3 for _ in range(3)]
+x[0][0] = 99
+print(x) # [[99, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+
+
+
+
+
+
+
+
+
+
+
