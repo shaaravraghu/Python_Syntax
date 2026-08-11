@@ -1,0 +1,1 @@
+I want you to provide syntax code from basic to advanced in python for my Python test. I'll discuss the topics shortly. We'll have to deep dive into details. I'm preparing for my Anthropic Fellowship Python Screening Test.
