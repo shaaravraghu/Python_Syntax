@@ -168,3 +168,23 @@ d = {
 
 
 
+# Dictionary Comprehensions
+{key_expression: value_expression for item in iterable <if condition>}
+# Examples
+squares = {
+    x: x * x
+    for x in range(10)
+    if x % 2 == 0
+}
+# Swap Keys and Values
+reversed_d = {
+    value: key
+    for key, value in d.items()
+}
+# Works only if values are unique and hashable
+
+
+
+
+
+
