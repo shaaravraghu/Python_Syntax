@@ -232,3 +232,39 @@ print(d) # 5
 
 
 
+
+
+
+
+
+
+# Miscellaneous
+# Mutable Objects in Immutable Objects
+t = ([1, 2], [3, 4])
+# We cannot modify t[0] but we can modify t[0][0] and t[0][1]
+# is v/s ==
+a = [1, 2]
+b = a
+# refers to same object
+a is b # True
+a == b # True
+c = a.copy()
+#  doesn't refer to same object
+c is a # False
+c == a # True (value)
+# Unpacking
+a = [1, 2, 3]
+print(a) # [1, 2, 3]
+print(*a) 1 2 3
+a = [1, 2, 3]
+b = [4, 5, 6]
+c = [*a, *b]
+print(c) # [1, 2, 3, 4, 5, 6]
+c = [a, b] # [[1, 2, 3], [4, 5, 6]]
+# f(*args) to unpack lists and tuples and f(**kwargs) to unpack dictionaries
+# Hashability
+{(1, 2): "value"} # Creates Dictionary Keys
+{[1, 2]: "value"} # Not Hashable
+
+
+
