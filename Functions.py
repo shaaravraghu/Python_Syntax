@@ -383,3 +383,19 @@ def add(a: int, b: int) -> int: # data type annotated
     return a + b
 add("Hello", "World")
 # doesn't raise an error and proceeds.
+
+
+
+
+
+# Function Overloading
+# Python does not support traditional compile-time function overloading like Java/C++.
+def add(a, b):
+    ...
+def add(a, b, c): # replaces the first one (doesn't create two functions)
+    ...
+# You can emulate overloading with:
+def add(*args):
+    return sum(args)
+
+# Nested Functions: Inner() & Outer()
