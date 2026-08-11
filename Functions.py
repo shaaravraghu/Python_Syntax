@@ -353,3 +353,33 @@ def outer():
     inner()
     print(x)
 outer()
+
+
+
+
+
+# Mutable Objects and Functions
+# Python uses object references when passing arguments.
+# Variable assignment does not tell you whether something is mutable. The object's type does.
+# Immutable type: all datatypes, tuples (though elements can have mutable objects), frozenset, none, range
+def change(x):
+    x += 1
+a = 10
+change(a)
+print(a)
+# Mutable type: list, set, dictionary, bytearray
+def change(lst):
+    lst.append(10)
+a = [1, 2, 3]
+change(a)
+print(a) # [1, 2, 3, 10]
+
+
+
+
+
+# Function + Type Hints
+def add(a: int, b: int) -> int: # data type annotated
+    return a + b
+add("Hello", "World")
+# doesn't raise an error and proceeds.
