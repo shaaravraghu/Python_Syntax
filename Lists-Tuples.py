@@ -178,3 +178,57 @@ for row in matrix:
 # Nested List Comprehension Method
 flat = [x for row in matrix for x in row]
 print(flat)
+
+
+
+
+
+
+
+
+
+
+# Tuple: Ordered, Immutable Collection
+numbers = (1, 2, 3, 4)
+numbers = 1, 2, 3, 4 # Tuple Packing
+numbers = ()
+numbers = 1,
+numbers = tuple()
+# x = (10): not tuple (type int)
+# Regular Indexing
+# Cannot append, remove, or modify: best way to change is tuple() -> list() -> (changes) -> tuple()
+
+
+
+# Built-in Functions
+t = (1, 2, 2, 3, 2)
+print(t.count(2))
+t = (1, 2, 2, 3, 2)
+print(t.count(2))
+
+
+
+# Packing and Unpacking
+person = ("Shaarav", 21, "India") # Packing
+name, age, country = person # Unpacking
+print(name)
+print(age)
+print(country)
+# Extended Unpacking
+numbers = (1, 2, 3, 4, 5)
+a, *b = numbers
+print(a) # 1
+print(b) # [2, 3, 4, 5]
+a, b, *c, d = numbers
+print(a) # 1
+print(b) # 2
+print(c) # [3, 4]
+print(d) # 5
+
+
+
+
+
+
+
+
