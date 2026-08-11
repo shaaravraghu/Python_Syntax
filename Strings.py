@@ -133,3 +133,29 @@ print(s.partition("=")) # ('name', '=', 'Shaarav')
 # separator
 # after
 s.rpartition()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# String Validation Methods
+s.isalpha()	# all characters are letters	
+s.isdigit()	# all characters are digits	
+s.isalnum()	# all characters are letters OR digits	
+s.isspace()	# all characters are whitespace	
+s.islower()	# has at least one character, and all characters are lowercase
+s.isupper()	# has at least one character, and all characters are uppercase	
+s.istitle()	# string follows title-case rules	
+isdecimal()	# Decimal digits 0–9 
+isdigit()	# Decimal digits + some special digit characters ONLY
+isnumeric()	# Digits + numeric characters such as fractions, Roman numerals, decimal (everything related to numbers)
