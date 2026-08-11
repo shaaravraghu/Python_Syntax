@@ -218,3 +218,30 @@ print("{name} is {age}".format(name="Shaarav", age=20))
 name = "Shaarav"
 age = 20
 print("My name is %s and I am %d" % (name, age))
+
+
+
+
+
+
+
+
+
+
+# Ordinal and Chronical
+ord("A") # 65
+chr(97) # 'a'
+
+# converting datatypes
+str()
+tuple()
+list()
+
+# bytes v/s str
+s = "hello"
+b = b"hello"
+b = "hello".encode()
+s = b"hello".decode()
+s = "hello"
+b = s.encode("utf-8")
+b.decode("utf-8")
