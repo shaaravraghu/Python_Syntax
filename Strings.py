@@ -159,3 +159,62 @@ s.istitle()	# string follows title-case rules
 isdecimal()	# Decimal digits 0–9 
 isdigit()	# Decimal digits + some special digit characters ONLY
 isnumeric()	# Digits + numeric characters such as fractions, Roman numerals, decimal (everything related to numbers)
+
+
+
+
+
+
+
+
+
+# zfill()
+"42".zfill(5)
+# 00042
+"-42".zfill(5)
+# -0042
+
+# Alignment
+"hello".ljust(10)
+"hello".rjust(10)
+"hello".center(10)
+"hello".center(11, "-")
+
+# f-String: Formatting
+# Variables
+name = "Shaarav"
+age = 20
+print(f"My name is {name} and I am {age}")
+# Expression
+a = 10
+b = 20
+print(f"Sum = {a + b}")
+# Functions
+print(f"Length = {len('Python')}")
+
+# Number Formatting 
+x = 3.14159265
+f"{x:.2f}"    # 2 decimal places
+f"{x:10}"     # width 10
+f"{x:05}"     # zero padded
+f"{x:,}"      # thousands separator
+# Percentage Formatting
+x = 0.756
+print(f"{x:.2%}")
+# Format Specifiers
+f"{value:format_spec}"
+f"{42:05}"       # 00042
+f"{42:<10}"      # left aligned
+f"{42:>10}"      # right aligned
+f"{42:^10}"      # centered
+f"{1234567:,}"   # 1,234,567
+
+# format()
+name = "Shaarav"
+print("Hello, {}".format(name))
+print("{} + {} = {}".format(2, 3, 5))
+print("{name} is {age}".format(name="Shaarav", age=20))
+# older syntax
+name = "Shaarav"
+age = 20
+print("My name is %s and I am %d" % (name, age))
