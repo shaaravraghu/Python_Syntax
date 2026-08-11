@@ -49,3 +49,30 @@ x.extend("abc") # [1, 2, 'a', 'b', 'c']
 list.insert(index, value)
 numbers = [10, 20, 30]
 numbers.insert(1, 99) # [10, 99, 20, 30]
+
+
+
+
+
+
+
+
+
+# Remove (Value), Pop (Index), Del
+numbers = [10, 20, 30, 20]
+numbers.remove(20) # [10, 30, 20]
+numbers.remove(100) # ValueError
+numbers = [10, 20, 30]
+x = numbers.pop() # 30 ([10, 20])
+print(x) # 30
+print(numbers) # [10, 20]
+x = numbers.pop(1)
+numbers = [1, 2, 3]
+numbers.clear() # []
+# del is a Python statement, not a list method.
+numbers = [10, 20, 30, 40]
+del numbers[1] # numbers: [10, 30, 40]
+del numbers[1:3] # numbers: [10]
+del numbers
+print(numbers) # NameError
+
