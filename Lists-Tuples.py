@@ -150,3 +150,31 @@ print(a)
 print(b)
 # [1, 2, 3]
 # [1, 2, 3, 4]
+
+
+
+
+
+
+
+
+# List Comprehension
+# [expression for item in iterable if condition]
+# Regular Method
+squares = []
+for x in range(5):
+    squares.append(x ** 2)
+# List Comprehension Method
+squares = [x ** 2 for x in range(5)] # [0, 1, 4, 9, 16]
+# Another Example
+even = [x for x in range(10) if x % 2 == 0] # [0, 2, 4, 6, 8]
+
+# Nested List Comprehension
+# Regular Method
+flat = []
+for row in matrix:
+    for x in row:
+        flat.append(x)
+# Nested List Comprehension Method
+flat = [x for row in matrix for x in row]
+print(flat)
