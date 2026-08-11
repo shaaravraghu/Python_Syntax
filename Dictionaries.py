@@ -116,3 +116,55 @@ value = d.pop(key, value) # instead of raising KeyError if key not found
 d.popitem() # removes and returns last inserted key-value pair
 d.clear() # {}
 len(d)
+
+
+
+
+
+
+
+
+
+
+
+
+# Hashability of Dictionary Keys (should be immutable)
+d = {
+    1: "a",
+    "hello": "b",
+    (1, 2): "c",
+    True: "d"
+} # VALID
+d = {
+    [1, 2]: "hello"
+} # INVALID
+# Dictionary values can be anything
+d = {
+    "a": [1, 2, 3],
+    "b": {1, 2, 3},
+    "c": {"x": 10},
+    "d": lambda x: x * 2
+}
+# Duplicate Keys
+d = {
+    1: "one",
+    1: "ONE",
+    1: "final"
+} # {1: "final"}
+# Same Hash: 1 and True
+d = {
+    True: "hello",
+    1: "world"
+}
+
+
+
+
+
+
+
+
+
+
+
+
