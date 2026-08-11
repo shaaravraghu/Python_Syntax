@@ -76,3 +76,25 @@ del numbers[1:3] # numbers: [10]
 del numbers
 print(numbers) # NameError
 
+
+
+# Search (in), Index, Count
+numbers = [10, 20, 30]
+print(20 in numbers) # True
+print(50 not in numbers) # True
+numbers = [10, 20, 30, 20]
+print(numbers.index(20))
+numbers.index(value, starting_index)
+numbers = [1, 2, 2, 2, 3]
+print(numbers.count(2)) # 3
+
+
+
+
+
+
+
+
+
+
+
