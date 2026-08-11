@@ -128,3 +128,25 @@ print(x) # [[99, 0, 0], [0, 0, 0], [0, 0, 0]]
 
 
 
+# Deep and Shallow Copy
+# Deep Copy
+a = [1, 2, 3]
+b = a
+# This does not create a new list.
+# Both variables refer to the same list.
+b.append(4)
+print(a) # [1, 2, 3, 4]
+# Shallow Copy
+b = a.copy()
+# or:
+b = a[:]
+# or:
+b = list(a)
+# Example
+a = [1, 2, 3]
+b = a.copy()
+b.append(4)
+print(a)
+print(b)
+# [1, 2, 3]
+# [1, 2, 3, 4]
