@@ -44,3 +44,14 @@ with open("data.txt") as f:
 with open("data.txt", "r") as f:
     for line in f:
         print(line)
+
+
+# Writing a File
+# write()
+with open("output.txt", "w") as f:
+    f.write("Hello\n")
+    f.write("World\n")
+# writelines()
+with open("output.txt", "w") as f:
+    f.write("Hello\n")
+    f.write("World\n")
