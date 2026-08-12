@@ -368,3 +368,12 @@ freq = Counter(my_list) # OR my_tpl my_str
 
 
 
+# Key with max/ min value
+max(d, key=d.get)
+min(d, key=d.get)
+# Filtering
+result = {
+    k: v
+    for k, v in d.items()
+    if condition
+}
