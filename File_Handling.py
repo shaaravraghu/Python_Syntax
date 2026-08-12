@@ -69,3 +69,22 @@ f.seek(0)
 if path.exists():
 if path.is_file():
 if path.is_dir():
+
+# Serialisation
+# Serialization means converting an object/data structure into a format that can be stored or transmitted.
+# Conceptually:
+# Python object
+#      ↓
+# serialization
+#      ↓
+# bytes / text
+# And back:
+# serialized data
+#      ↓
+# deserialization
+#      ↓
+# Python object
+# Common formats:
+# JSON
+# Pickle
+# CSV
