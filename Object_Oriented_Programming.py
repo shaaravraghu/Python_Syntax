@@ -92,3 +92,45 @@ class Example:
     def static_method():
         pass
 
+# Inheritance: A class can inherit from another class.
+class Animal:
+    def speak(self):
+        print("Animal speaks")
+class Dog(Animal):
+    pass
+d = Dog()
+d.speak() # Animal Speaks
+
+# Method Overriding: Child class overrides Parent
+class Animal:
+    def speak(self):
+        print("Animal sound")
+class Dog(Animal):
+    def speak(self):
+        print("Woof")
+d = Dog()
+d.speak() # Woof
+
+# Super: access parent implementation
+class Animal:
+    def speak(self):
+        print("Animal sound")
+class Dog(Animal):
+    def speak(self):
+        super().speak()
+        print("Woof")
+# Animal sound
+# Woof
+
+# Super for parent and child constructor implementation
+class Animal:
+    def __init__(self, name):
+        self.name = name
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name)
+        self.breed = breed
+d = Dog("Max", "Labrador")
+print(d.name)
+print(d.breed)
+
