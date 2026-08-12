@@ -114,3 +114,27 @@ with open("data.json", "r", encoding="utf-8") as f:
 # False	    false
 # None	    null
 
+# Pickle
+import pickle
+# Serialize:
+data = {
+    "name": "Alice",
+    "scores": [90, 95]
+}
+with open("data.pkl", "wb") as f:
+    pickle.dump(data, f)
+# Deserialize:
+with open("data.pkl", "rb") as f:
+    data = pickle.load(f)
+
+# JSON vs Pickle
+# JSON Advantages:
+# Human-readable
+# Language-independent
+# Great for APIs
+# Safer for untrusted data
+# Pickle Advantages:
+# Python-specific
+# Can serialize many Python objects
+# Convenient for Python applications
+# Critical security rule: Never unpickle untrusted data. pickle.load() can execute arbitrary code contained in malicious pickle data.
