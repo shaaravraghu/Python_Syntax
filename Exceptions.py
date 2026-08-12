@@ -92,3 +92,16 @@ except InsufficientFundsError as e:
     print(e.balance)
     print(e.amount)
 
+# Exception Hierarchies
+class AppError(Exception):
+    pass
+class DatabaseError(AppError):
+    pass
+class AuthenticationError(AppError):
+    pass
+try:
+    ...
+except DatabaseError:
+    ...
+except AppError:
+    ...
