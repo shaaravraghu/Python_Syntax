@@ -14,3 +14,20 @@ try:
     x = 10 / 0
 except ZeroDivisionError:
     print("Cannot divide by zero")
+
+# Multiple Except Blocks
+try:
+    x = int(input("Enter number: "))
+    result = 10 / x
+
+except ValueError:
+    print("Invalid integer")
+
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+# Multiple Errors in a Single Except Block
+try:
+    ...
+except (ValueError, TypeError):
+    print("Invalid input")
+
