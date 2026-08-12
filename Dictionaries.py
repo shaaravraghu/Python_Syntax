@@ -328,3 +328,43 @@ sorted_d = dict(
 # By default, the ordering of dictionaries is based on way they were inserted
 
 
+# Frequency counting using collections.defaultdict
+from collections import defaultdict
+freq = defaultdict(int) # non-assigned values take default value as 0
+for x in arr:
+    freq[x] += 1
+# Grouping
+groups = defaultdict(list)
+for name, department in students:
+    groups[department].append(name)
+# Frequency counting using collections.counter
+from collections import Counter
+freq = Counter(my_list) # OR my_tpl my_str
+
+
+
+
+
+
+
+
+# Dictionary Complexity
+# Lookup, Insert, Update, Delete, Membership: O(1)
+# key
+#  ↓
+# hash(key)
+#  ↓
+# hash table
+#  ↓
+# value
+# A hashable object needs a stable hash value and equality behavior suitable for dictionary/set use.
+
+
+
+
+
+
+
+
+
+
