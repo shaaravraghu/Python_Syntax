@@ -56,3 +56,20 @@ except ZeroDivisionError:
     print("Error")
 finally:
     print("Always runs")
+
+# raise
+raise ValueError("message")
+# re-raises/ creates error when handeled by except or something else
+
+# exception chaining
+try:
+    value = int("abc")
+except ValueError as e:
+    raise RuntimeError("Could not process input") from e
+
+# suppressing exception context
+try:
+    int("abc")
+except ValueError:
+    raise RuntimeError("Invalid configuration") from None
+
