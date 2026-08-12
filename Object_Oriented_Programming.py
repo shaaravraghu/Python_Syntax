@@ -176,3 +176,38 @@ class Person:
     def age(self):
         return self._age
 
+# Important Dunder Methods
+
+__init__      # initialization
+__new__       # object creation
+__str__       # str(obj)
+__repr__      # repr(obj)
+
+__len__       # len(obj)
+
+__getitem__   # obj[key]
+__setitem__   # obj[key] = value
+__delitem__   # del obj[key]
+
+__contains__  # x in obj
+
+__eq__        # ==
+__ne__        # !=
+__lt__        # <
+__le__        # <=
+__gt__        # >
+__ge__        # >=
+
+__add__       # +
+__sub__       # -
+__mul__       # *
+__truediv__   # /
+__floordiv__  # //
+__mod__       # %
+__pow__       # **
+
+__iter__      # iter(obj)
+__next__      # next(obj)
+
+__enter__     # with
+__exit__      # with
