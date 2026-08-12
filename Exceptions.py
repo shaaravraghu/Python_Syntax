@@ -31,3 +31,10 @@ try:
 except (ValueError, TypeError):
     print("Invalid input")
 
+# Accessing the Exception Class
+try:
+    x = int("abc")
+except ValueError as e:
+    print(e)
+    print(type(e))
+    print(str(e))
