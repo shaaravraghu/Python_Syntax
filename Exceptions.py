@@ -73,3 +73,22 @@ try:
 except ValueError:
     raise RuntimeError("Invalid configuration") from None
 
+# Custom Exceptions
+class InsufficientFundsError(Exception):
+    pass
+raise InsufficientFundsError("Not enough money")
+
+# Custom Exception with Data
+class InsufficientFundsError(Exception):
+    def __init__(self, balance, amount):
+        self.balance = balance
+        self.amount = amount
+        super().__init__(
+            f"Balance={balance}, requested={amount}"
+        )
+try:
+    raise InsufficientFundsError(100, 500)
+except InsufficientFundsError as e:
+    print(e.balance)
+    print(e.amount)
+
