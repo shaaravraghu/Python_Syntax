@@ -47,3 +47,12 @@ except ValueError:
 else:
     print("Successfully converted:", x)
 # The else block executes only if no exception occurred.
+
+# Finally Block
+# Finally executes regardless of whether an exception occurred. Always runs.
+try:
+    x = 10 / 2
+except ZeroDivisionError:
+    print("Error")
+finally:
+    print("Always runs")
