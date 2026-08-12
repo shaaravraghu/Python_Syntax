@@ -293,3 +293,12 @@ class Car:
         self.engine = Engine()
 # This represents: Car HAS-A Engine
 # rather than: Car IS-A Engine
+
+# Multiple Inheritence
+class A:
+    pass
+class B:
+    pass
+class C(A, B):
+    pass
+# C inherits from both A and B.
