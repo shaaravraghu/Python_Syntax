@@ -260,3 +260,71 @@ students = [
     {"name": "Bob", "age": 21},
     {"name": "Charlie", "age": 19}
 ]
+
+
+
+
+
+
+
+
+# Dictionary Unpacking
+a = {
+    "x": 1,
+    "y": 2
+}
+b = {
+    **a,
+    "z": 3
+}
+# {
+#     "x": 1,
+#     "y": 2,
+#     "z": 3
+# }
+
+# Merging Dictionaries
+a | b
+a = {"x": 1, "y": 2}
+b = {"y": 20, "z": 3}
+c = a | b # the right hand dictionary wins conflict
+# {
+#     "x": 1,
+#     "y": 20,
+#     "z": 3
+# }
+
+
+
+
+
+# Sorting
+d = {
+    "apple": 5,
+    "banana": 2,
+    "orange": 8
+}
+# By keys
+sorted(d) # ["apple", "banana", "orange"]: returns a list of keys
+# By Values
+sorted(
+    d.items(),
+    key=lambda x: x[1],
+    (reverse=True)
+)
+# sorted(
+#     d.items(),
+#     key=lambda x: x[1]
+# )
+# Return dictionary after sorting
+sorted_d = dict(
+    sorted(d.items(), key=lambda x: x[1]) # 0 if needed
+)
+# {
+#     "banana": 2,
+#     "apple": 5,
+#     "orange": 8
+# }
+# By default, the ordering of dictionaries is based on way they were inserted
+
+
