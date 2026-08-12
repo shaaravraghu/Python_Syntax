@@ -134,3 +134,45 @@ d = Dog("Max", "Labrador")
 print(d.name)
 print(d.breed)
 
+# Polymorphism and Interface
+# Polymorphism means the same interface can work with different object types.
+class Dog:
+    def speak(self):
+        return "Woof"
+class Cat:
+    def speak(self):
+        return "Meow"
+def make_sound(animal):
+    print(animal.speak())
+make_sound(Dog())
+make_sound(Cat())
+# No explicit type checking is necessary (Duck Typing).
+
+# Encapsulation
+# Python doesn't have Java-style strict private fields. Instead, it uses conventions and name mangling.
+# Public
+self.name
+# Protected convention
+self._name
+# A single underscore means: "Internal use; don't rely on this externally."
+# Private-ish attribute
+self.__balance
+
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance
+account = BankAccount(1000)
+account.__balance # doesn't work normally.
+
+# Python performs name mangling:
+account._BankAccount__balance
+
+# Properties
+# Properties allow you to make a method behave like an attribute.
+class Person:
+    def __init__(self, age):
+        self._age = age
+    @property
+    def age(self):
+        return self._age
+
