@@ -138,3 +138,33 @@ with open("data.pkl", "rb") as f:
 # Can serialize many Python objects
 # Convenient for Python applications
 # Critical security rule: Never unpickle untrusted data. pickle.load() can execute arbitrary code contained in malicious pickle data.
+
+# CSV
+import csv
+# Reading:
+with open("data.csv", newline="", encoding="utf-8") as f:
+    reader = csv.reader(f)
+    for row in reader:
+        print(row)
+# Writing:
+with open("data.csv", "w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["Name", "Age"])
+    writer.writerow(["Alice", 20])
+
+# CSV as Dictionaries
+import csv
+# Reading
+with open("data.csv", newline="", encoding="utf-8") as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        print(row["Name"])
+# Writing
+fieldnames = ["Name", "Age"]
+with open("data.csv", "w", newline="", encoding="utf-8") as f:
+    writer = csv.DictWriter(f, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerow({
+        "Name": "Alice",
+        "Age": 20
+    })
