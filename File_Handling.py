@@ -55,3 +55,17 @@ with open("output.txt", "w") as f:
 with open("output.txt", "w") as f:
     f.write("Hello\n")
     f.write("World\n")
+
+# Encoding
+with open("data.txt", "r", encoding="utf-8") as f:
+
+# File Position
+# current position:
+f.tell()
+# move to:
+f.seek(0)
+
+# File Existance
+if path.exists():
+if path.is_file():
+if path.is_dir():
