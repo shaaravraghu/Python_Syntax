@@ -38,3 +38,12 @@ except ValueError as e:
     print(e)
     print(type(e))
     print(str(e))
+
+# Else Block
+try:
+    x = int("10")
+except ValueError:
+    print("Invalid")
+else:
+    print("Successfully converted:", x)
+# The else block executes only if no exception occurred.
