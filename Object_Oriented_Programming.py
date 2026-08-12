@@ -228,3 +228,68 @@ p3 = p1 + p2
 # Python internally calls:
 p1.__add__(p2)
 
+# Dataclasses
+# Instead of writing boilerplate code:
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+# Alternative
+from dataclasses import dataclass
+@dataclass
+class Person:
+    name: str
+    age: int
+# Dataclasses automatically provide useful functionality such as initialization and a useful representation.
+# Default values
+@dataclass
+class Person:
+    name: str
+    age: int = 18
+# field()
+from dataclasses import dataclass, field
+@dataclass
+class Student:
+    name: str
+    subjects: list = field(default_factory=list)
+# subjects: list = [] # would create a shared mutable default, which is generally undesirable.
+
+# Abraction
+# Abstract Class: nominal typing
+from abc import ABC, abstractmethod 
+class Animal(ABC):
+    @abstractmethod
+    def speak(self):
+        pass
+# Animal(): you cannot normally initiate this
+# A subclass must implement the abstract method:
+class Dog(Animal):
+    def speak(self):
+        return "Woof"
+d = Dog()
+print(d.speak())
+
+# Abstract Class: structural typing
+from typing import Protocol
+class Speaker(Protocol):
+    def speak(self) -> str:
+        ...
+class Dog:
+    def speak(self) -> str:
+        return "Woof"
+# class Dog(Speaker): this is not needed anymore
+
+# The important idea is:
+# ABC → nominal typing
+# Protocol → structural typing
+
+# Composition
+# Instead of:
+class Car(Engine):
+    ...
+# you often want:
+class Car:
+    def __init__(self):
+        self.engine = Engine()
+# This represents: Car HAS-A Engine
+# rather than: Car IS-A Engine
