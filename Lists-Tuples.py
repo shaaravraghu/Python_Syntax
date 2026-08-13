@@ -270,6 +270,7 @@ c = [a, b] # [[1, 2, 3], [4, 5, 6]]
 
 # Sorting
 list.sort(key=None, reverse=False)
+# key refers to function to be used while sorting
 sequence.sort()
 data.sort(reverse=True)
 data.sort(key=lambda x: (-x["score"], x["name"]))
