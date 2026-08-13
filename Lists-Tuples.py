@@ -268,3 +268,10 @@ c = [a, b] # [[1, 2, 3], [4, 5, 6]]
 
 
 
+# Sorting
+list.sort(key=None, reverse=False)
+sequence.sort()
+data.sort(reverse=True)
+data.sort(key=lambda x: (-x["score"], x["name"]))
+result = sorted(data) # doesn't change input
+result = list(reversed(iterable))
