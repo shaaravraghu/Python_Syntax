@@ -318,7 +318,7 @@ sorted(
 # )
 # Return dictionary after sorting
 sorted_d = dict(
-    sorted(d.items(), key=lambda x: x[1]) # 0 if needed
+    sorted(d.items(), key=lambda x: x[1]) # 0 if needed (keys)
 )
 # {
 #     "banana": 2,
@@ -326,9 +326,25 @@ sorted_d = dict(
 #     "orange": 8
 # }
 # By default, the ordering of dictionaries is based on way they were inserted
-# Multi-key sorting
-key=lambda x: (criterion1, criterion2)
-key=lambda x: (-x["score"], x["name"])
+# Multi-key sorting: boiler-plates
+# Used for sorting a list of dictionaries, records in a dictionary, dictionary of lists
+# list of dictionaries
+var = sorted(input, key=lambda x: x["key"])
+# multiple sorting criteria
+# key=lambda x: (criterion1 (higher priority), criterion2 (lower priority), ...)
+key=lambda x: (-x["score"], x["name"]) # -for descending sequence
+# (reverse = True)
+# records with dictionary
+result = sorted(
+    users.items(), key=lambda item: item[1]["key"] # 1 references to value of records
+)
+# records with lists
+result = sorted(
+    data.items(),
+    key=lambda item: item[1][i] # 1 refers to value of records; i refers to index
+)
+
+
 
 # Frequency counting using collections.defaultdict
 from collections import defaultdict
