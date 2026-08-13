@@ -326,7 +326,9 @@ sorted_d = dict(
 #     "orange": 8
 # }
 # By default, the ordering of dictionaries is based on way they were inserted
-
+# Multi-key sorting
+key=lambda x: (criterion1, criterion2)
+key=lambda x: (-x["score"], x["name"])
 
 # Frequency counting using collections.defaultdict
 from collections import defaultdict
