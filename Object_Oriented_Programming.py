@@ -41,7 +41,7 @@ print(p.age)
 class User:
   var = None
   def __init__(self, name, age, email):
-    self.name = name
+    self.name = name # converts parameters into instance attributes
     self.age = age
     self.email = email
 
@@ -52,7 +52,8 @@ class Username:
   def record(name, age, email):
   # name, age, and email are not attributes but parameters and belong to function and not class
   # to define attributes we either use instance attributes (constructor (__init__)- call class to handle) or class attributes (have to assign a value or var = None)
-    
+
+# We use self.var for instance attributes (inside __init__) and var for regular class attributes (top level of class)
 
 # Self
 class Person:
