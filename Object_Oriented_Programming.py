@@ -36,6 +36,8 @@ class Person:
 p = Person("Alice", 20)
 print(p.name)
 print(p.age)
+# self isn't a keyword but a conventional map between object and method
+# __init__ always runs automatically when an object is created (only method called while defining object)
 
 # Class Attribute v/s Instance Attribute
 class User:
