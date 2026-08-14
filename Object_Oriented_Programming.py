@@ -37,6 +37,23 @@ p = Person("Alice", 20)
 print(p.name)
 print(p.age)
 
+# Class Attribute v/s Instance Attribute
+class User:
+  var = None
+  def __init__(self, name, age, email):
+    self.name = name
+    self.age = age
+    self.email = email
+
+user1 = User(Alice, 20, alice@example.com)
+user2 = User(AliceBob, 25, bob@example.com)
+
+class Username:
+  def record(name, age, email):
+  # name, age, and email are not attributes but parameters and belong to function and not class
+  # to define attributes we either use instance attributes (constructor (__init__)- call class to handle) or class attributes (have to assign a value or var = None)
+    
+
 # Self
 class Person:
     def greet(self):
