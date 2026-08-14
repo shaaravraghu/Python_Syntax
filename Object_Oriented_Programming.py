@@ -141,6 +141,7 @@ class Dog(Animal):
         print("Woof")
 # Animal sound
 # Woof
+# super().func_name(var): var other than self
 
 # Super for parent and child constructor implementation
 class Animal:
