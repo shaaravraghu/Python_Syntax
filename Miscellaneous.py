@@ -41,3 +41,28 @@ a | b
 a ^ b	
 # NOT	
 ~a
+
+# Bit-wise complete operations
+
+def bitwise_add(x, y):
+    while y != 0:
+        carry = x & y     # Find common set bits (the carry)
+        x = x ^ y         # Sum of bits where at least one is not set
+        y = carry << 1    # Shift carry by 1 to add it in the next loop
+    return x
+
+def bitwise_subtract(x, y):
+    # Two's complement of y is (~y + 1)
+    y_twos_complement = bitwise_add(~y, 1)
+    return bitwise_add(x, y_twos_complement)
+
+def bitwise_multiply(x, y):
+    result = 0
+    while y > 0:
+        # If the lowest bit of y is 1, add x to the result
+        if y & 1:
+            result = result + x
+        
+        x <<= 1  # Shift x left (multiply x by 2)
+        y >>= 0  # Shift y right (divide y by 2)
+    return result
