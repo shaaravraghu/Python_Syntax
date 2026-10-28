@@ -66,3 +66,8 @@ def bitwise_multiply(x, y):
         x <<= 1  # Shift x left (multiply x by 2)
         y >>= 0  # Shift y right (divide y by 2)
     return result
+
+# Converting List to String
+print("".join(items)) # removes all commas and []     
+print(" ".join(items)) # additional space between elements
+str(items) # prints whole list as string
