@@ -21,3 +21,13 @@ a = [x for x in range(n) if (<condition>)] # if alwyas at the end
 # if-else condition on range
 a = [x if (<condition>) else alternate_val for x in range(n)] # if alwyas at the end
 # elif and for-else cannot be used here
+
+# Binary Representation
+# bin
+print(bin(number))        # Output: '0b_'
+# Without prefix
+print(bin(number)[2:])    # Output: '_'
+# Using format()
+print(format(number, 'b'))  # Output: '_'
+# Using f-string 
+print(f"{number:b}")        # Output: '_'
