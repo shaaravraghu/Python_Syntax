@@ -31,3 +31,13 @@ print(bin(number)[2:])    # Output: '_'
 print(format(number, 'b'))  # Output: '_'
 # Using f-string 
 print(f"{number:b}")        # Output: '_'
+
+# Bit-wise Operators
+# AND	
+a & b	
+# OR 
+a | b	
+# XOR	
+a ^ b	
+# NOT	
+~a
