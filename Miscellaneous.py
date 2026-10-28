@@ -71,3 +71,24 @@ def bitwise_multiply(x, y):
 print("".join(items)) # removes all commas and []     
 print(" ".join(items)) # additional space between elements
 str(items) # prints whole list as string
+
+
+# Sorting Techniques (use tuple brackets to evaluate nested values)
+
+# 1. SORT BY MULTIPLE PREFERENCES (TUPLE/ LIST/ DICT KEY): 1st/ 2nd/ ... preference (must be nested)
+data.sort(key=lambda x: (x[0], x[1]))
+
+# 2. MIXED ASCENDING / DESCENDING SORTS (applies to preference)
+data.sort(key=lambda x: (-x["score"], x["age"]))
+
+# 3. SORT BY MATHEMATICAL EXPRESSION  
+key=lambda x: <expression>)
+
+# 4. SORT BY BOOLEAN / CONDITIONAL EXPRESSION (Pushes items to the front (0/False) or back (1/True) based on a conditional check)
+items.sort(key=lambda x: not x["in_stock"])
+
+# 5. SORT VIA CUSTOM FUNCTION EXPRESSION (for complex, multi-line scoring formulas that cannot fit inside a single lambda)
+def calculate_score(item):
+    return (item['rating'] * 2) - item['delivery_days']
+catalog = [{'rating': 4.5, 'delivery_days': 5}]
+catalog.sort(key=calculate_score, reverse=True)
