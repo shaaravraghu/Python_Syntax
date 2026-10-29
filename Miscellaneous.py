@@ -94,5 +94,5 @@ catalog = [{'rating': 4.5, 'delivery_days': 5}]
 catalog.sort(key=calculate_score, reverse=True)
 
 # Infinity
-val = float(-'inf')
 val = float('inf')
+val = float('-inf') # negative infinity
