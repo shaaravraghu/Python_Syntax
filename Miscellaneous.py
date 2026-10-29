@@ -92,3 +92,7 @@ def calculate_score(item):
     return (item['rating'] * 2) - item['delivery_days']
 catalog = [{'rating': 4.5, 'delivery_days': 5}]
 catalog.sort(key=calculate_score, reverse=True)
+
+# Infinity
+val = float(-'inf')
+val = float('inf')
